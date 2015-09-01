@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Garry's Website</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      padding: 2px;
+    }
+    table {
+      border-spacing: 2px;
+    }
+    table#t01, th#t01, td#t01 {
+      border: 0px solid black;
+    }
+    td#td01{
+      width:25%;
+      vertical-align: top;
+
+    }
+  </style>
 </head>
 <body>
+  <table style="width:100%">
+    <tr>
+      <th align="center" colspan="2">Garry's Website</th>
+    </tr>
+    <tr>
+      <td align="left" colspan="2"> <a href="A04.html">Home</a> <a href="forms.html">Forms</a></td>
+    </tr>
+    <tr>
+      <br>
+      <td id="td01" align="center"><br><b>Forms Summary</b><br><br>
+        HTML supports several different types of input.</td>
+      <td align="left">
+        <b>Forms Page</b><br><br>
+        <form action="forms.html" method="get">
+          The following is a text input:<br><br>
+          Username: <input type="text" name="username"><br><br>
+          The following is a password input: <br><br>
+          Password: <input type="password" name="password"><br><br>
+          Radio buttons: <br><br>
+          <input type="radio" name="sex" value="male" checked>Male
+          <br>
+          <input type="radio" name="sex" value="female">Female<br><br>
+          Checkboxes<br><br>
+          <input type="checkbox" name="os" value="Windows"> Windows<br>
+          <input type="checkbox" name="os" value="OS X"> OS X<br>
+          <input type="checkbox" name="os" value="Linux" checked> Linux<br><br>
+          Submit button to send form data<br><br>
+          <input type="submit" value="Submit">
 
+        </form>
+
+      </td>
+    </tr>
+    <tfoot>
+    <tr>
+      <td align="center" colspan="2">Copyright (C) Garry Hwang</td>
+    </tr>
+    </tfoot>
+
+  </table>
 </body>
 </html>
