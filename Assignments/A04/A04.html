@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garry's Website</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      padding: 2px;
+    }
+    table {
+      border-spacing: 2px;
+    }
+    table#t01, th#t01, td#t01 {
+      border: 0px solid black;
+    }
+    td#td01{
+      width:25%;
+      vertical-align: top;
+
+    }
+  </style>
+</head>
+<body>
+  <table style="width:100%">
+    <tr>
+      <th align="center" colspan="2">Garry's Website</th>
+    </tr>
+    <tr>
+      <td align="left" colspan="2"> <a href="A04.html">Home</a> <a href="forms.html">Forms</a></td>
+    </tr>
+    <tr>
+      <br>
+      <td id="td01" align="center"><br><b>Summary Window</b><br><br>
+        HTML supports tables.<br><br>
+        HTML supports three types of lists: unordered,ordered, and description.</td>
+      <td align="left">
+        <br><b>Home Page</b><br><br>
+        Tables:<br><br>
+        <table id="t01">
+          <caption>Borderless<br>Table</caption>
+          <th id="t01" align="center">Header 1</th>
+          <tr>
+            <td id="t01">
+              Row 1, Column 1
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <caption>Bordered Table</caption>
+          <tr>
+            <th align="center">Header 1</th>
+            <th align="center">Header 2</th>
+          </tr>
+          <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+          </tr>
+          <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+          </tr>
+        </table>
+        <br>
+        Lists: <br>
+         <ul>
+          <li>Coffee</li>
+          <li>Milk</li>
+        </ul>
+        <ol type="1">
+          <li>Coffee</li>
+          <li>Milk</li>
+        </ol>
+        <dl>
+          <dt>Coffee</dt>
+          <dd>black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>white cold drink</dd>
+        </dl>
+
+      </td>
+    </tr>
+    <tfoot>
+      <tr>
+        <td align="center" colspan="2">Copyright (C) Garry Hwang</td>
+      </tr>
+    </tfoot>
+
+  </table>
+</body>
+</html>
