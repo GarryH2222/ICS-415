@@ -1,0 +1,60 @@
+
+#art1 {
+  height: 100%;
+  width: 100%;
+}
+#head1 {
+  align: left;
+  colspan: 2;
+  height: 25%;
+}
+#navigation {
+  height: 50px;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  margin: 0px;
+  vertical-align: top;
+}
+#summary {
+  heigh: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-left-style: none;
+  border-right-color: red;
+  margin: 0px;
+  width: 25%;
+  text-align: center;
+
+}
+
+#bodyy {
+  heigh: 50%;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-right-style: none;
+  border-left-style: none;
+  width: 75%;
+  bottom-margin: 0px;
+  left-margin: 5px;
+  padding-left: 5px;
+
+}
+#div1 {
+  display: inline-flex;
+  width: 100%;
+}
+#foot1{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  margin: 0px;
+  height: 50px;
+  text-align: center;
+}
