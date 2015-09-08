@@ -1,0 +1,9 @@
+.right-border {
+  border-right: 2px solid red;
+}
+
+.top-bottom-border {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  background-color: darkgray;
+}
