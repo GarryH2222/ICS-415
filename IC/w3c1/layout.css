@@ -7,3 +7,15 @@
   border-bottom: 2px solid grey;
   background-color: darkgray;
 }
+.heady {
+  height: 25%;
+  border-bottom: 2px solid grey;
+}
+.navy {
+  margin-top: 10px;
+  margin-left: 2%;
+  height: 50px;
+  width: 96%;
+  float: left;
+  text-align: left;
+}
