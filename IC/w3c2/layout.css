@@ -1,5 +1,5 @@
-.right-border {
-  border-right: 2px solid red;
+.left-border {
+  border-left: 2px solid red;
   height: 100%;
 }
 
@@ -19,4 +19,16 @@
   width: 96%;
   float: left;
   text-align: left;
+}
+#menu1{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#menu2{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#menu3{
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
