@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garry</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      padding: 2px;
+    }
+    table {
+      border-spacing: 2px;
+    }
+    table#t01, th#t01, td#t01 {
+      border: 0px solid black;
+    }
+    td#td01{
+      width:25%;
+      vertical-align: top;
+
+    }
+  </style>
+</head>
+<body>
+<table>
+  <caption>Bordered Table</caption>
+  <tr>
+    <th align="center">Name</th>
+    <th align="center">Address</th>
+    <th align="center">Phone Number</th>
+  </tr>
+  <tr>
+    <td id="name"></td>
+    <td id="address"></td>
+    <td id="phone"></td>
+  </tr>
+</table>
+<p id="test"></p>
+<script>
+  function validateForm() {
+    var x = location.search;
+    var x2 = x.split("&");
+    var x21 = x2[0].split("=");
+    var x22 = x2[1].split("=");
+    var x23 = x2[2].split("=");
+    var name = x21[1];
+    var address = x22[1];
+    var phone = x23[1];
+
+    document.getElementById("name").innerHTML = name.split('+').join(' ');
+    document.getElementById("address").innerHTML = address.split('+').join(' ');
+    phone = phone.split('%28').join('(');
+    phone = phone.split('%29').join(')');
+    document.getElementById("phone").innerHTML = phone;
+  }
+  validateForm();
+</script>
+
+
+</body>
+</html>
