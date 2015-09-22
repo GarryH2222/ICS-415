@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,37 +11,41 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 
-  <title>Garry's Website</title>
+  <title>dsafs</title>
 
+  <script>
+    $(document).ready(function(){
+      $("#demo").mouseleave(function(){
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.fontFamily = "verdana";
+      });
+    });
+    $(document).ready(function(){
+      $("#demo2").mouseenter(function(){
+        document.getElementById("demo2").style.color = "pink";
+        document.getElementById("demo2").style.fontFamily = "arial";
+      });
+    });
+    $(document).ready(function(){
+      $("#demo3").click(function(){
+        document.getElementById("demo3").style.color = "white";
+        document.getElementById("demo3").style.fontFamily = "verdana";
+        document.getElementById("demo3").style.backgroundColor = "black";
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="container" style="border-bottom-style: solid" id="demo">
-    <button onclick="oClick()">Change style</button>
     <p>hello<br> dsafdhsklfjdlsakfjlkasjflkjasdflkasdjflksdajl</p>
   </div>
-  <div class="container" style="border-bottom-style: solid" onmouseover="oMouse(this)">
+  <div class="container" style="border-bottom-style: solid" id="demo2">
     <p>hello<br> dsafdhsklfjdlsakfjlkasjflkjasdflkasdjflksdajl</p>
   </div>
-  <div class="container" style="border-bottom-style: solid" onmouseout="outMouse()">
+  <div class="container" style="border-bottom-style: solid" id="demo3">
     <p>hello<br> dsafdhsklfjdlsakfjlkasjflkjasdflkasdjflksdajl</p>
   </div>
-  <script>
-    function oClick() {
-      document.getElementById("demo").style.color = "red";
-      document.getElementById("demo").style.fontFamily = "verdana";
-    }
-    function oMouse(obj) {
-      obj.style.color = "pink";
-      obj.style.fontFamily = "arial";
-    }
-    function outMouse() {
-      document.getElementById("demo").style.color = "white";
-      document.getElementById("demo").style.fontFamily = "verdana";
-      document.getElementById("demo").style.backgroundColor = "black";
-    }
-  </script>
-
 </body>
 </html>
