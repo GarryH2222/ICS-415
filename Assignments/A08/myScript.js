@@ -40,3 +40,15 @@ $(document).ready(function(){
     $("#id4").toggle();
   });
 });
+function countURL() {
+  var url1 = document.forms["myForm"]["site"].value;
+  var count = 0;
+  $(document).ready(function() {
+    $.ajax({url: url1, success: function(result) {
+      var matchArray = result.match(/<a/g);
+      count = matchArray.length;
+      alert(count);
+      $("#results").html(count);
+    }});
+  });
+}
